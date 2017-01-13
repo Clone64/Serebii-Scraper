@@ -11,7 +11,7 @@ urls = ['http://serebii.net/events/serialcode.shtml',
         'http://serebii.net/events/effects.shtml']
 
 if not os.path.exists('Serebii_scrapes'):
-    os.makedirs('Serebii_scrapes', 0755)
+    os.makedirs('Serebii_scrapes', 755)
 for url in urls:
     page = requests.get(url)
 
